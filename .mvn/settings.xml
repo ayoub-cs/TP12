@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="
+            http://maven.apache.org/SETTINGS/1.2.0
+            http://maven.apache.org/xsd/settings-1.2.0.xsd">
+
+    <!-- Configuration des miroirs Maven -->
+    <mirrors>
+        <mirror>
+            <id>java-net-https</id>
+
+            <!-- Dépôts redirigés vers ce miroir -->
+            <mirrorOf>
+                releases.java.net,
+                snapshots.java.net,
+                jvnet-nexus-staging,
+                netbeans
+            </mirrorOf>
+
+            <!-- URL HTTPS du dépôt miroir -->
+            <url>https://maven.java.net/content/repositories/releases/</url>
+
+            <!-- Miroir actif -->
+            <blocked>false</blocked>
+        </mirror>
+    </mirrors>
+
+</settings>
